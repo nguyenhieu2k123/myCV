@@ -3,6 +3,12 @@
     --border-btn-color: #316CE2;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
