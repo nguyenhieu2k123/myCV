@@ -14,6 +14,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.clear {
+    clear: both;
+}
+
 .btn {
     max-width: 200px;
     min-width: 146px;
@@ -36,6 +40,38 @@ html {
     transition: all .2s ease-in-out;
 }
 
+.col {
+    width: 80%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 48%;
+}
+
+.col-third {
+    width: calc(90% / 3);
+}
+
+.no-border-radius {
+    border-radius: none;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -51,5 +87,14 @@ html {
     }
     to {
         transform: scale(var(--growth-to));
+    }
+}
+
+@keyframes appear {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: rgba(black, black, black, 0.6);
     }
 }

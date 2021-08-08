@@ -76,11 +76,15 @@
     position: relative;
 }
 
+.max {
+    height: calc(100vh - 74px);
+}
+
 .content__selection {
     width: 100%;
-    height: calc(100vh - 74px);
+    /* height: calc(100vh - 74px); */
     /* background-image: linear-gradient(to bottom, #01010D, #010C1B); */
-    padding: 54px 0;
+    padding: 74px 0;
     position: relative;
 }
 
@@ -164,7 +168,8 @@
     width: 100%;
     color: var(--white-color);
     text-align: center;
-    padding: 16px 0 54px;
+    padding: 74px 0;
+    position: relative;
 }
 
 .content__selection-title {
@@ -172,8 +177,11 @@
     text-transform: uppercase;
     font-weight: 600;
     opacity: 0.97;
-    position: relative;
+    position: absolute;
     margin: 0;
+    width: 100%;
+    /* text-align: center; */
+    bottom: 34px;
 }
 
 .content__selection-title-background-text {
@@ -195,12 +203,16 @@
     margin-top: 24px;
     font-size: 16px;
     opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    /* text-align: center; */
+    bottom: -12px;
 }
 
 .about__info-content {
     color: var(--white-color);
     display: flex;
-    margin: 38px 178px 0;
+    margin: 38px 178px 74px;
 }
 
 .about__info-content-left {
@@ -262,6 +274,7 @@
     align-items: center;
     width: 100%;
     position: relative;
+    /* padding-bottom: 74px; */
 }
 
 .about__info-footer-btn-download {
@@ -287,6 +300,7 @@
     font-size: 22px;
     color: var(--white-color);
     border: 1px solid var(--border-btn-color);
+    border-radius: 4px;
     padding: 6px;
     width: 40px;
     display: inline-flex;
@@ -300,48 +314,137 @@
 
 /* Start service */
 
-.service__list {
-    width: 80%;
-    margin: 0 178px;
+.content-list {
+    margin: 40px 178px
 }
 
-.service__item {
-    width: calc(90% / 3);
-    height: ;
+.content-list__item {
     color: var(--white-color);
     float: left;
     position: relative;
-    margin: 40px 10px;
     border: 1px solid var(--border-btn-color);
-    padding: 20px;
+    border-radius: 10%;
 }
 
-.service__item-img {
+#service .content-list__item:hover {
+    box-shadow: 2px 4px var(--border-btn-color);
+    /* transform: scale(1.01); */
+    transform: scaleY(102%);
+    transform-origin: bottom left;
+    transition-duration: .2s;
+}
+
+.content-list__item-img {
     width: 100%;
     text-align: center;
     margin: 36px 0;
 }
 
-.service__item-icon {
+.content-list__item-icon {
     font-size: 72px;
 }
 
-.service__item-info {
+.content-list__item-info {
     margin: 10px 20px;
 }
 
-.service__item-title {
+.content-list__item-title {
     font-size: 26px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
-.service__item-desc {
+.content-list__item-desc {
     font-size: 18px;
     line-height: 22px;
     color: #B5B5B5;
     min-height: 80px;
-    text-align: left;
+    text-align: center;
 }
 
 
 /* End service */
+
+
+/* Start portfolio */
+
+.portfolio-content {
+    /* width: 40%; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.portfolio-img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.portfolio-item+.content-list__item {
+    margin: 0;
+}
+
+.portfolio__item-img {
+    width: 100%;
+}
+
+.portfolio-item:hover .portfolio__item-detail {
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.portfolio__item-detail {
+    transition: 1s;
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.portfolio__item-detail-title {
+    font-size: 28px;
+    color: var(--white-color);
+    font-weight: 600;
+    position: absolute;
+    top: 45%;
+}
+
+.portfolio__item-detail-link {
+    text-decoration: none;
+    font-size: 22px;
+    color: var(--white-color);
+    top: 54%;
+    position: absolute;
+}
+
+
+/* End portfolio */
+
+
+/* Start resume  */
+
+.resume__education {
+    color: var(--white-color);
+}
+
+.education__title {
+    font-size: 26px;
+    font-weight: 500;
+    opacity: 0.95;
+}
+
+
+/* End resume  */
