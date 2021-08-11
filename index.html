@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="./assets/font/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./assets/style/main.css">
     <link rel="stylesheet" href="./assets/style/base.css">
+    <link rel="stylesheet" href="./assets/style/responsive.css">
+    <script src="./script/main.js"></script>
     <title>My CV</title>
 </head>
 
 <body>
     <div id="main">
+
 
         <!-- Start header -->
 
@@ -24,33 +27,36 @@
 
             <!-- Start Navbar menu -->
 
-            <div class="header__menu">
-                <div class="header__my-name">
-                    <a href="" class="header__my-name-link">My<span>CV</span> </a>
+            <!-- <div class="header__menu"> -->
+            <div class="header__my-name">
+                <div class="menu-icon-btn" id="mb-menu" onclick="openMenu();">
+                    <i class="menu-icon fas fa-bars"></i>
                 </div>
-                <nav class="header__navbar">
-                    <ul class="header__navbar--menu">
-                        <li class="header__navbar--item">
-                            <a href="#" class="header__navbar--item-link">Hello</a>
-                        </li>
-                        <li class="header__navbar--item">
-                            <a href="#about" class="header__navbar--item-link">About</a>
-                        </li>
-                        <li class="header__navbar--item">
-                            <a href="#service" class="header__navbar--item-link">Services</a>
-                        </li>
-                        <li class="header__navbar--item">
-                            <a href="#portfolio" class="header__navbar--item-link">Portfolio</a>
-                        </li>
-                        <li class="header__navbar--item">
-                            <a href="#resume" class="header__navbar--item-link">Resume</a>
-                        </li>
-                        <li class="header__navbar--item">
-                            <a href="#contact" class="header__navbar--item-link">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+                <a href="" class="header__my-name-link">My<span>CV</span> </a>
             </div>
+            <nav class="header__navbar">
+                <ul class="header__navbar--menu">
+                    <li class="header__navbar--item">
+                        <a href="#" class="header__navbar--item-link">Hello</a>
+                    </li>
+                    <li class="header__navbar--item">
+                        <a href="#about" class="header__navbar--item-link">About</a>
+                    </li>
+                    <li class="header__navbar--item">
+                        <a href="#service" class="header__navbar--item-link">Services</a>
+                    </li>
+                    <li class="header__navbar--item">
+                        <a href="#portfolio" class="header__navbar--item-link">Portfolio</a>
+                    </li>
+                    <li class="header__navbar--item">
+                        <a href="#resume" class="header__navbar--item-link">Resume</a>
+                    </li>
+                    <li class="header__navbar--item">
+                        <a href="#contact" class="header__navbar--item-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- </div> -->
 
             <!-- End navbar menu -->
 
@@ -60,40 +66,40 @@
 
         <!-- Start slider -->
 
-        <div id="slider">
-            <div class="content__selection max">
-                <div class="header__content">
-                    <div class="header__content-img">
-                        <img src="./assets/img/myavatar.jpeg" alt="" class="header__content-img-my-img">
-                    </div>
-                    <div class="header__content-detail">
-                        <div class="header__content-desc">Hi guys, I'm a fresher</div>
-                        <h1 class="header__content-my-name">I'm Nguyen Hieu</h1>
-                        <button class="btn">
+        <div id="slider" class="content__selection">
+            <!-- <div class="content__selection"> -->
+            <div class="header__content">
+                <div class="header__content-img">
+                    <img src="./assets/img/myavatar.jpeg" alt="" class="header__content-img-my-img">
+                </div>
+                <div class="header__content-detail">
+                    <div class="header__content-desc">Hi guys, I'm a fresher</div>
+                    <h1 class="header__content-my-name">I'm Nguyen Hieu</h1>
+                    <button class="btn">
                             Call me now
                         </button>
-                    </div>
-                    <div class="header__go-down">
-                        <div class="header__go-down-link">
-                            <span>Scroll down</span>
-                            <a href="#about">
-                                <i class="header__go-down-icon fas fa-angle-double-down"></i>
-                            </a>
-                        </div>
+                </div>
+                <div class="header__go-down">
+                    <div class="header__go-down-link">
+                        <span>Scroll down</span>
+                        <a href="#about">
+                            <i class="header__go-down-icon fas fa-angle-double-down"></i>
+                        </a>
                     </div>
                 </div>
-
             </div>
+
+            <!-- </div> -->
             <!-- End header content -->
         </div>
 
         <!-- End slider -->
 
-        <div id="about">
-            <div class="content__selection">
+        <div id="about" class="content__selection">
+            <div class="about__content content-list">
                 <div class="content__selection-heading">
                     <div class="content__selection-title-background-text">
-                        <span class="content__selection-title-background">ABOUT ME</span>
+                        <div class="content__selection-title-background">ABOUT ME</div>
                     </div>
                     <h1 class="content__selection-title">Who am i</h1>
                     <h3 class="content__selection-desc">Get to know me</h3>
@@ -170,17 +176,17 @@
 
         <!-- Start service -->
 
-        <div id="service">
-            <div class="content__selection">
+        <div id="service" class="content__selection">
+            <div class="about__service">
                 <div class="content__selection-heading">
                     <div class="content__selection-title-background-text">
-                        <span class="content__selection-title-background">my service</span>
+                        <div class="content__selection-title-background">my service</div>
                     </div>
                     <h1 class="content__selection-title">What can i do</h1>
                     <h3 class="content__selection-desc">It is a long established fact that a reader will be distracted by the readable content</h3>
                 </div>
-                <div class="content-list col">
-                    <div class="content-list__item col-third m-10">
+                <div class="content-list col s-m-auto">
+                    <div class="content-list__item col-third s-col-full m-10 s-m-auto s-mbt-10">
                         <div class="content-list__item-img">
                             <i class="content-list__item-icon fas fa-code"></i>
                         </div>
@@ -194,7 +200,7 @@
                         </div>
                     </div>
 
-                    <div class="content-list__item col-third m-10 ">
+                    <div class="content-list__item col-third s-col-full m-10 s-m-auto s-mbt-10 ">
                         <div class="content-list__item-img">
                             <i class="content-list__item-icon fas fa-mobile"></i>
                         </div>
@@ -208,7 +214,7 @@
                         </div>
                     </div>
 
-                    <div class="content-list__item col-third m-10 ">
+                    <div class="content-list__item col-third s-col-full m-10 s-m-auto s-mbt-10 ">
                         <div class="content-list__item-img">
                             <i class="content-list__item-icon fab fa-bootstrap"></i>
                         </div>
@@ -222,7 +228,7 @@
                         </div>
                     </div>
 
-                    <div class="content-list__item col-third m-10 ">
+                    <div class="content-list__item col-third s-col-full m-10 s-m-auto s-mbt-10 ">
                         <div class="content-list__item-img">
                             <i class="content-list__item-icon fas fa-heart"></i>
                         </div>
@@ -236,7 +242,7 @@
                         </div>
                     </div>
 
-                    <div class="content-list__item col-third m-10 ">
+                    <div class="content-list__item col-third s-col-full m-10 s-m-auto s-mbt-10 ">
                         <div class="content-list__item-img">
                             <i class="content-list__item-icon fas fa-mobile"></i>
                         </div>
@@ -250,7 +256,7 @@
                         </div>
                     </div>
 
-                    <div class="content-list__item col-third m-10 ">
+                    <div class="content-list__item col-third s-col-full m-10 s-m-auto s-mbt-10 ">
                         <div class="content-list__item-img">
                             <i class="content-list__item-icon fab fa-bootstrap"></i>
                         </div>
@@ -274,17 +280,17 @@
 
         <!-- Start portfolio -->
 
-        <div id="portfolio">
-            <div class="content__selection">
+        <div id="portfolio" class="content__selection">
+            <div class="portfolio__content">
                 <div class="content__selection-heading">
                     <div class="content__selection-title-background-text">
-                        <span class="content__selection-title-background">portfolio</span>
+                        <div class="content__selection-title-background">portfolio</div>
                     </div>
                     <h1 class="content__selection-title">my project</h1>
                     <h3 class="content__selection-desc">There're some project i did and i can do more than it </h3>
                 </div>
-                <div class="content-list col portfolio-content">
-                    <div class="portfolio-item content-list__item col-half">
+                <div class="content-list col">
+                    <div class="portfolio-item content-list__item col-half s-col-full">
                         <div class="portfolio__item-img">
                             <img src="./assets/img/p1.jpeg" alt="" class="portfolio-img">
 
@@ -298,7 +304,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="portfolio-item content-list__item col-half">
+                    <div class="portfolio-item content-list__item col-half s-col-full">
                         <div class="portfolio__item-img">
                             <img src="./assets/img/p1.jpeg" alt="" class="portfolio-img">
 
@@ -318,39 +324,216 @@
             <div class="clear"></div>
         </div>
 
-
-        <div class="clear"></div>
         <!-- End portfolio -->
 
         <!-- Start Resume -->
 
-        <div id="resume">
-            <div class="content__seletion ">
+        <div id="resume" class="content__selection">
+            <div class="resume__content ">
                 <div class="content__selection-heading">
                     <div class="content__selection-title-background-text">
-                        <span class="content__selection-title-background">resume</span>
+                        <div class="content__selection-title-background">resume</div>
+
                     </div>
                     <h1 class="content__selection-title">Education</h1>
                     <h3 class="content__selection-desc">Let's see</h3>
+
+
                 </div>
                 <div class="resume__education content-list">
-                    <div class="education__title"> Education</div>
-                    <div class="education__progress col-full">
+                    <div class="education__progress">
+                        <div class="education__progress--info col-full">
+                            <div class="education__progress-time col-third s-col-full s-mbt-10 ">
+                                2018-2023
+                            </div>
+                            <div class="education__progress-place col-third s-col-full s-mbt-10">
+                                SaiGon University, Sofware technology
+                            </div>
+                            <div class="education__progress-detail col-third s-col-full s-mbt-10">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="education__progress--content col-full">
+                        <div class="education__progress-skill col-half s-col-full">
+                            <div class="education__progress-label">
+                                <span class="education__progress-label-title">HTML</span>
+                                <span class="education__progress-label-percent">80%</span>
+                            </div>
+
+                            <div class="education__progress-skill-bar">
+                                <div class="education__progress-skill-bar-percent" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="education__progress-skill col-half s-col-full">
+                            <div class="education__progress-label">
+                                <span class="education__progress-label-title">JS</span>
+                                <span class="education__progress-label-percent">25%</span>
+                            </div>
+
+                            <div class="education__progress-skill-bar">
+                                <div class="education__progress-skill-bar-percent" style="width: 25%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="education__progress-skill col-half s-col-full">
+                            <div class="education__progress-label">
+                                <span class="education__progress-label-title">CSS</span>
+                                <span class="education__progress-label-percent">55%</span>
+                            </div>
+
+                            <div class="education__progress-skill-bar">
+                                <div class="education__progress-skill-bar-percent" style="width: 55%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="education__progress-skill col-half s-col-full">
+                            <div class="education__progress-label">
+                                <span class="education__progress-label-title">Bootstrap</span>
+                                <span class="education__progress-label-percent">40%</span>
+                            </div>
+
+                            <div class="education__progress-skill-bar">
+                                <div class="education__progress-skill-bar-percent" style="width: 40%;"></div>
+                            </div>
+                        </div>
 
                     </div>
+                    <div class="education__progress-more">
+                        <div class="education__progress--content ">
+                            <div class="content-list__item col-four s-col-half m-auto s-mbt-10">
+                                <h1 class="content-list__item-title mt-22"> >1 </h1>
+                                <h3 class="content-list__item-desc m-l-r-10">Years Experence</h3>
+                            </div>
+                            <div class="content-list__item col-four s-col-half m-auto s-mbt-10">
+                                <h1 class="content-list__item-title mt-22"> > 0 </h1>
+                                <h3 class="content-list__item-desc m-l-r-10">Happy Clients</h3>
+                            </div>
+                            <div class="content-list__item col-four s-col-half m-auto s-mbt-10">
+                                <h1 class="content-list__item-title mt-22"> >0 </h1>
+                                <h3 class="content-list__item-desc m-l-r-10">Downloads</h3>
+                            </div>
+                            <div class="content-list__item col-four s-col-half m-auto s-mbt-10">
+                                <h1 class="content-list__item-title mt-22"> >3 </h1>
+                                <h3 class="content-list__item-desc m-l-r-10">Project done</h3>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
                 </div>
             </div>
+            <div class="clear"></div>
 
+
+
+
+            <!-- End resume -->
+
+            <!-- Start contact -->
+
+            <div id="contact" class="content__selection">
+                <div class="contact__content">
+                    <div class="content__selection-heading">
+                        <div class="content__selection-title-background-text">
+                            <div class="content__selection-title-background">Contact me</div>
+                        </div>
+                        <h1 class="content__selection-title">Get in touch</h1>
+                        <h3 class="content__selection-desc">Contact with me </h3>
+                    </div>
+
+                    <div class="contact__body col-full">
+                        <div class="contact__body-item col m-auto">
+                            <div class="contact__content col-half s-col-full">
+                                <div class="contact-item">
+                                    <div class="content__list-item-img">
+                                        <i class="contact-icon fas fa-envelope"></i>
+                                    </div>
+                                    <div class="content__list-item-info">
+                                        <div class="content__list-item-info-title">
+                                            Email us
+                                        </div>
+                                        <div class="contact__content-item-info-title">
+                                            nguyenhieu2k123@gmail.com
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <div class="content__list-item-img">
+                                        <i class="contact-icon fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="content__list-item-info">
+                                        <div class="content__list-item-info-title">
+                                            Call
+                                        </div>
+                                        <div class="contact__content-item-info-title">
+                                            03567116xx
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <div class="content__list-item-img">
+                                        <i class="contact-icon fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="content__list-item-info">
+                                        <div class="content__list-item-info-title">
+                                            Visit
+                                        </div>
+                                        <div class="contact__content-item-info-title">
+                                            Ham Tan, Binh Thuan
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact__content col-half s-col-full">
+                                <form action="" class="contact-form">
+                                    <input type="text" class="contact__content-input" placeholder="  Your name">
+                                    <input type="text" class="contact__content-input" placeholder="  Email">
+                                    <input type="text" class="contact__content-input" placeholder="  Subject">
+                                    <input type="text" class="contact__content-input msg-input" placeholder="  Message">
+                                    <div class="btn btn-send s-m-auto"> Send</div>
+                                </form>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__footer col-full m-auto">
+                        <div class="about__info-social-network">
+                            <a href="" class="social-network-link">
+                                <i class="social-icon fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="social-network-link">
+                                <i class="social-icon fab fa-instagram"></i>
+                            </a>
+
+
+                            <a href="" class="social-network-link">
+                                <i class="social-icon fab fa-google"></i>
+                            </a>
+                            <a href="" class="social-network-link">
+                                <i class="social-icon fab fa-github"></i>
+                            </a>
+                            <a href="" class="social-network-link">
+                                <i class="social-icon fab fa-twitter"></i>
+
+                            </a>
+                        </div>
+                        <div class="contact__footer-desc">
+                            2021 ©. NguyenHieu. Rebuilt base on Kayden and RectCV themes
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="clear"></div>
+            <!-- End contact -->
         </div>
-
-        <div class="clear"></div>
-
-
-        <!-- End resume -->
-
-
-
-    </div>
+        <!-- <div class="clear"></div> -->
 
 </body>
 

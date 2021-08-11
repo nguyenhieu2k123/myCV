@@ -53,7 +53,11 @@ html {
 }
 
 .col-third {
-    width: calc(90% / 3);
+    width: calc(90% / 3)!important;
+}
+
+.col-four {
+    width: 20%;
 }
 
 .no-border-radius {
@@ -64,12 +68,20 @@ html {
     margin: auto;
 }
 
+.m-l-r-10 {
+    margin: 0 10px;
+}
+
 .mr-10 {
     margin-right: 10px;
 }
 
 .m-10 {
     margin: 10px;
+}
+
+.mt-22 {
+    margin-top: 22px;
 }
 
 @keyframes fadeIn {
@@ -96,5 +108,14 @@ html {
     }
     to {
         background-color: rgba(black, black, black, 0.6);
+    }
+}
+
+@keyframes progressBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
     }
 }
