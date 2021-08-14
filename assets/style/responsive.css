@@ -1,4 +1,4 @@
-@media (max-width: 740px) {
+@media (max-width: 739px) {
     #main {}
     #header {
         overflow: hidden;
@@ -119,5 +119,55 @@
     }
     .content__list-item-info {
         margin-left: 12px;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .content-list {
+        margin: 40px 60px;
+    }
+    #header {
+        display: flex;
+    }
+    .header__my-name {
+        margin: 0;
+    }
+    .header__navbar--item {
+        margin: 0 10px;
+    }
+    .about__info-content {
+        display: block;
+    }
+    .about__info-body-desc {
+        text-align: justify;
+    }
+    .about__info-footer {
+        display: block;
+        text-align: center;
+    }
+    .about__info-social-network {
+        margin: 40px 0;
+    }
+    .about__service>.content-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .m-col-half {
+        width: 45% !important;
+    }
+    .contact__body-item {
+        display: block;
+    }
+    .contact__body-item>.contact__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%!important;
+        margin: 0;
+    }
+    .contact-form {
+        display: block;
     }
 }
